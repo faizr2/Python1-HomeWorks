@@ -51,10 +51,6 @@ def lucky_ticket(ticket_number):
         last+=int(tick_list[-i-1])
     return first==last
 
-def test(got, expected):
-    prefix = "OK" if got == expected else "X"
-    print("{0} - Получено: {1} | Ожидалось: {2}".format(prefix, repr(got), repr(expected)))
-
 print(lucky_ticket(123006))
 print(lucky_ticket(12321))
 print(lucky_ticket(436751))
